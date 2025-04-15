@@ -926,7 +926,7 @@ require("lazy").setup({
 			-- Load the colorscheme here.
 			-- Like many other themes, this one has different styles, and you could load
 			-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-			vim.cmd.colorscheme("catppuccin")
+			vim.cmd.colorscheme("gruvbox")
 		end,
 	},
 
@@ -1030,6 +1030,7 @@ require("lazy").setup({
 	require("kickstart.plugins.toggleterm"),
 	require("kickstart.plugins.catppuccin"),
 	require("kickstart.plugins.melange"),
+	require("kickstart.plugins.gruvbox"),
 
 	-- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
 	--    This is the easiest way to modularize your config.
