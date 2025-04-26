@@ -18,6 +18,6 @@
 
 #### Java DAP and LSP configuration references
 
-[Example github repo](https://github.com/Nawy/nvim-config-examples/tree/main/dap-java)
-[nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls?tab=readme-ov-file)
-[eclipse.jdt.ls](https://github.com/eclipse-jdtls/eclipse.jdt.ls?tab=readme-ov-file#installation)
+- [Example github repo](https://github.com/Nawy/nvim-config-examples/tree/main/dap-java)
+- [nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls?tab=readme-ov-file)
+- [eclipse.jdt.ls](https://github.com/eclipse-jdtls/eclipse.jdt.ls?tab=readme-ov-file#installation)
