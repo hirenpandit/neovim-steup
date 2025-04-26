@@ -7,13 +7,12 @@
 
 ### Plugins used
 
-1. NeoTree - Filesystem show/hide and navigation
-2. Treesitter - Syntext highlighting
-3. CMP - Code automcomplete
-4. zorolsp - LSP setup
-5. Telescope - Seach and navigation
-6. ToggleTerminal - Open/close terminal in neovim
-
+1. `NeoTree` - **Filesystem show/hide and navigation**
+2. `Treesitter` - **Syntext highlighting**
+3. `CMP` - **Code automcomplete**
+4. `zorolsp` - **LSP setup**
+5. `Telescope` - **Seach and navigation**
+6. `ToggleTerminal` - **Open/close terminal in neovim**
 
 
 #### Java DAP and LSP configuration references
