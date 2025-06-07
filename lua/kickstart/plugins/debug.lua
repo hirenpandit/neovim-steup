@@ -95,6 +95,7 @@ return {
 			ensure_installed = {
 				-- Update this to ensure that you have the debuggers for the langs you want
 				"delve",
+				"js-debug-adapter",
 			},
 		})
 
@@ -156,5 +157,33 @@ return {
 				detached = vim.fn.has("win32") == 0,
 			},
 		})
+
+		--- configure for javascript and Deno
+		require("dap").adapters["pwa-node"] = {
+			type = "server",
+			host = "localhost",
+			port = "${port}",
+			executable = {
+				command = "node",
+				-- 💀 Make sure to update this path to point to your installation
+				args = { "/Users/hirenpandit/Software/js-debug/src/dapDebugServer.js", "${port}" },
+			},
+		}
+		dap.configurations.typescript = {
+			{
+				type = "pwa-node",
+				request = "launch",
+				name = "Launch file",
+				runtimeExecutable = "deno",
+				runtimeArgs = {
+					"run",
+					"--inspect-wait",
+					"--allow-all",
+				},
+				program = "${file}",
+				cwd = "${workspaceFolder}",
+				attachSimplePort = 9229,
+			},
+		}
 	end,
 }
